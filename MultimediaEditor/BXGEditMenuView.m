@@ -141,6 +141,11 @@
     }];
 }
 
+- (void)layoutSubviews {
+    [self controlScrollViewIndicate];
+    [super layoutSubviews];
+}
+
 - (void)onLeftBtn:(UIButton*)sender {
     if(self.scrollView.contentOffset.x > 0) {
         CGFloat offsetX = self.scrollView.contentOffset.x;
@@ -191,7 +196,14 @@
     [self controlScrollViewIndicate];
 }
 
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+  // called when setContentOffset/scrollRectVisible:animated: finishes. not called if not animating
+    NSLog(@"%@, the contentOffset w=%f, contentSize w=%f",  NSStringFromSelector(_cmd), scrollView.contentOffset.x, scrollView.contentSize.width);
+    [self controlScrollViewIndicate];
+}
+
 - (void)controlScrollViewIndicate {
+    NSLog(@"%@, the contentOffset w=%f, contentSize w=%f",  NSStringFromSelector(_cmd), _scrollView.contentOffset.x, _scrollView.contentSize.width);
     if(_scrollView.contentOffset.x==0) {
         _leftBtn.hidden = YES;
         if(_scrollView.contentSize.width>self.bounds.size.width) {
