@@ -1,0 +1,26 @@
+//
+//  MultimeidaEditor.pch
+//  MultimediaEditor
+//
+//  Created by apple on 2018/1/27.
+//  Copyright © 2018年 itheima. All rights reserved.
+//
+
+#ifndef MultimeidaEditor_pch
+#define MultimeidaEditor_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Masonry/Masonry.h>
+
+#import "UIFont+Extension.h"
+#import "UIColor+Extension.h"
+#import "NSString+Extension.h"
+
+#define K_RELATIVE_SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define K_RELATIVE_SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+
+#define K_ABSOLUTE_SCREEN_WIDTH MIN(K_RELATIVE_SCREEN_WIDTH, K_RELATIVE_SCREEN_HEIGHT)
+#define K_ABSOLUTE_SCREEN_HEIGHT MAX(K_RELATIVE_SCREEN_WIDTH, K_RELATIVE_SCREEN_HEIGHT)
+
+#endif /* MultimeidaEditor_pch */
