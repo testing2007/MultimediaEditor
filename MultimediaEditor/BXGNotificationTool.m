@@ -15,7 +15,7 @@
 #define kBXGNotiServerError @"kBXGNotiServerError"
 #define kBXGNotiUserInfokNotiServerError @"kBXGNotiUserInfokNotiServerError"
 
-@interface BXGNotificationTool() <BXGNetWorkToolDelegate>
+@interface BXGNotificationTool() <BXGNetworkToolDelegate>
 
 @end
 

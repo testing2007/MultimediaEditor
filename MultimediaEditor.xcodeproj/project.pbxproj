@@ -21,8 +21,12 @@
 		1873E3E520218B1F00B8D065 /* BXGEditMarklineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E3E320218B1F00B8D065 /* BXGEditMarklineView.m */; };
 		18D400FC202327E800B4B33F /* BXGMainParserItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D400F6202327E800B4B33F /* BXGMainParserItem.m */; };
 		18D400FD202327E800B4B33F /* BXGNetworkParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D400F9202327E800B4B33F /* BXGNetworkParser.m */; };
-		18D400FE202327E800B4B33F /* BXGNetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D400FB202327E800B4B33F /* BXGNetWorkTool.m */; };
+		18D400FE202327E800B4B33F /* BXGNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D400FB202327E800B4B33F /* BXGNetworkTool.m */; };
 		18D401012023294D00B4B33F /* BXGNotificationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D400FF2023294D00B4B33F /* BXGNotificationTool.m */; };
+		18D401052023FEA700B4B33F /* BXGNetworkTool+Baidu.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D401042023FEA700B4B33F /* BXGNetworkTool+Baidu.m */; };
+		18D4010920240B6F00B4B33F /* BXGBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D4010820240B6F00B4B33F /* BXGBaseViewModel.m */; };
+		18D4010C20240B7F00B4B33F /* BXGTranslateViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D4010B20240B7F00B4B33F /* BXGTranslateViewModel.m */; };
+		18D4010F20240EC100B4B33F /* BXGLogMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D4010E20240EC100B4B33F /* BXGLogMonitor.m */; };
 		69C7CAC783FE049A2E1FAA6C /* libPods-MultimediaEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 713C071C8745A65443FEA751 /* libPods-MultimediaEditor.a */; };
 /* End PBXBuildFile section */
 
@@ -55,11 +59,19 @@
 		18D400F7202327E800B4B33F /* BXGNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXGNetwork.h; sourceTree = "<group>"; };
 		18D400F8202327E800B4B33F /* BXGNetworkParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXGNetworkParser.h; sourceTree = "<group>"; };
 		18D400F9202327E800B4B33F /* BXGNetworkParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXGNetworkParser.m; sourceTree = "<group>"; };
-		18D400FA202327E800B4B33F /* BXGNetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXGNetWorkTool.h; sourceTree = "<group>"; };
-		18D400FB202327E800B4B33F /* BXGNetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXGNetWorkTool.m; sourceTree = "<group>"; };
+		18D400FA202327E800B4B33F /* BXGNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXGNetworkTool.h; sourceTree = "<group>"; };
+		18D400FB202327E800B4B33F /* BXGNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXGNetworkTool.m; sourceTree = "<group>"; };
 		18D400FF2023294D00B4B33F /* BXGNotificationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXGNotificationTool.m; sourceTree = "<group>"; };
 		18D401002023294D00B4B33F /* BXGNotificationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXGNotificationTool.h; sourceTree = "<group>"; };
 		18D4010220232C8300B4B33F /* BXGToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BXGToast.h; sourceTree = "<group>"; };
+		18D401032023FEA700B4B33F /* BXGNetworkTool+Baidu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BXGNetworkTool+Baidu.h"; sourceTree = "<group>"; };
+		18D401042023FEA700B4B33F /* BXGNetworkTool+Baidu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BXGNetworkTool+Baidu.m"; sourceTree = "<group>"; };
+		18D4010720240B6F00B4B33F /* BXGBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BXGBaseViewModel.h; sourceTree = "<group>"; };
+		18D4010820240B6F00B4B33F /* BXGBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BXGBaseViewModel.m; sourceTree = "<group>"; };
+		18D4010A20240B7F00B4B33F /* BXGTranslateViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BXGTranslateViewModel.h; sourceTree = "<group>"; };
+		18D4010B20240B7F00B4B33F /* BXGTranslateViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BXGTranslateViewModel.m; sourceTree = "<group>"; };
+		18D4010D20240EC100B4B33F /* BXGLogMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BXGLogMonitor.h; sourceTree = "<group>"; };
+		18D4010E20240EC100B4B33F /* BXGLogMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BXGLogMonitor.m; sourceTree = "<group>"; };
 		54A2F68950C60644A4E53546 /* Pods-MultimediaEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultimediaEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-MultimediaEditor/Pods-MultimediaEditor.release.xcconfig"; sourceTree = "<group>"; };
 		713C071C8745A65443FEA751 /* libPods-MultimediaEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MultimediaEditor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C913DAE222C7D257A8C798 /* Pods-MultimediaEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultimediaEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MultimediaEditor/Pods-MultimediaEditor.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,9 +119,12 @@
 		1810CBD9201B1DC100824451 /* MultimediaEditor */ = {
 			isa = PBXGroup;
 			children = (
+				18D4010D20240EC100B4B33F /* BXGLogMonitor.h */,
+				18D4010E20240EC100B4B33F /* BXGLogMonitor.m */,
 				18D4010220232C8300B4B33F /* BXGToast.h */,
 				18D401002023294D00B4B33F /* BXGNotificationTool.h */,
 				18D400FF2023294D00B4B33F /* BXGNotificationTool.m */,
+				18D4010620240B2B00B4B33F /* ViewModel */,
 				18D400F4202327E800B4B33F /* Network */,
 				1873E3D4201C524B00B8D065 /* UIFont+Extension.h */,
 				1873E3D3201C524B00B8D065 /* UIFont+Extension.m */,
@@ -142,13 +157,26 @@
 			children = (
 				18D400F5202327E800B4B33F /* BXGMainParserItem.h */,
 				18D400F6202327E800B4B33F /* BXGMainParserItem.m */,
-				18D400F7202327E800B4B33F /* BXGNetwork.h */,
 				18D400F8202327E800B4B33F /* BXGNetworkParser.h */,
 				18D400F9202327E800B4B33F /* BXGNetworkParser.m */,
-				18D400FA202327E800B4B33F /* BXGNetWorkTool.h */,
-				18D400FB202327E800B4B33F /* BXGNetWorkTool.m */,
+				18D400F7202327E800B4B33F /* BXGNetwork.h */,
+				18D400FA202327E800B4B33F /* BXGNetworkTool.h */,
+				18D400FB202327E800B4B33F /* BXGNetworkTool.m */,
+				18D401032023FEA700B4B33F /* BXGNetworkTool+Baidu.h */,
+				18D401042023FEA700B4B33F /* BXGNetworkTool+Baidu.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		18D4010620240B2B00B4B33F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18D4010720240B6F00B4B33F /* BXGBaseViewModel.h */,
+				18D4010820240B6F00B4B33F /* BXGBaseViewModel.m */,
+				18D4010A20240B7F00B4B33F /* BXGTranslateViewModel.h */,
+				18D4010B20240B7F00B4B33F /* BXGTranslateViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CAAA0ADDF6E69651FF0D10B1 /* Frameworks */ = {
@@ -281,10 +309,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D400FE202327E800B4B33F /* BXGNetWorkTool.m in Sources */,
+				18D400FE202327E800B4B33F /* BXGNetworkTool.m in Sources */,
 				1873E3E520218B1F00B8D065 /* BXGEditMarklineView.m in Sources */,
 				1873E3D2201C2D7500B8D065 /* BXGEditView.m in Sources */,
 				18D401012023294D00B4B33F /* BXGNotificationTool.m in Sources */,
+				18D4010F20240EC100B4B33F /* BXGLogMonitor.m in Sources */,
 				1873E3D5201C524B00B8D065 /* UIFont+Extension.m in Sources */,
 				1873E3D9201C555500B8D065 /* UIColor+Extension.m in Sources */,
 				1873E3DF202055DB00B8D065 /* BXGEditMenuView.m in Sources */,
@@ -293,6 +322,9 @@
 				1810CBDC201B1DC100824451 /* AppDelegate.m in Sources */,
 				18D400FC202327E800B4B33F /* BXGMainParserItem.m in Sources */,
 				18D400FD202327E800B4B33F /* BXGNetworkParser.m in Sources */,
+				18D4010920240B6F00B4B33F /* BXGBaseViewModel.m in Sources */,
+				18D4010C20240B7F00B4B33F /* BXGTranslateViewModel.m in Sources */,
+				18D401052023FEA700B4B33F /* BXGNetworkTool+Baidu.m in Sources */,
 				1873E3DC201C556200B8D065 /* NSString+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

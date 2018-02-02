@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "BXGEditMenuView.h"
 #import "BXGEditMarklineView.h"
+#import "BXGTranslateViewModel.h"
 
 @interface ViewController ()
 @property (nonatomic, assign) BOOL bShowEditMenuView;
@@ -16,6 +17,9 @@
 
 @property (nonatomic, weak) BXGEditMarklineView *marklineView;
 
+@property (nonatomic, strong) BXGTranslateViewModel *translateVM;
+
+@property (weak, nonatomic) IBOutlet UITextView *logPanelTxtView;
 
 @end
 
@@ -25,6 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[BXGLogMonitor share] setEnableLog:YES];
     // Do any additional setup after loading the view, typically from a nib.
 //    [self.contentTxtView installUI];
     
@@ -43,6 +48,8 @@
         make.right.offset(-10);
         make.height.equalTo(@100);
     }];
+    
+    _translateVM = [BXGTranslateViewModel new];
 }
 
 -(void)didClickCustomMenuAction {
@@ -134,6 +141,34 @@
     _editMenuView.hidden = YES;
     
     _bShowEditMenuView =  NO;
+}
+
+- (IBAction)addNetworkRequest:(id)sender {
+//#define RWNetworkLogB(format, ...) \
+//do { \
+//    printf("[%s] %s [第%d行] %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]); \
+//NSString *strContent = [NSString stringWithFormat:"[%@] %@ [第%d行] %@\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ##__VA_ARGS__]] ];
+//} while(0);
+    //NSString *strContent = [NSString stringWithFormat:format, ##__VA_ARGS__]; \
+    //    NSString *strContent = [NSString stringWithFormat:"[%@] %@ [第%d行] %@\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, __VA_ARGS__] UTF8String]]; \
+//
+//    NSString* baseURLString;
+//    NSString *urlString;
+//    NSMutableDictionary *mPara;
+//    id responseObject;
+//    RWNetworkLogB(@"%@", baseURLString);
+//          RWNetworkLogB(@"\nBase URL:%@\n",baseURLString);
+
+//    NSString *strContent = [NSString stringWithFormat:"[%@] %s [第%d行] %@\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, __VA_ARGS__] UTF8String]];
+
+    NSString *content = @"apple";
+    [_translateVM loadRequestTranslateDestLanguageType:TRANSLATE_LANGUAGE_EN andTranlateContent:content andFinished:^(BOOL bSuccess) {
+        
+    }];
+}
+
+- (IBAction)lookLog:(id)sender {
+    _logPanelTxtView.text = [[BXGLogMonitor share] logInfo];
 }
 
 @end

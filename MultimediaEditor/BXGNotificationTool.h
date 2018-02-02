@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BXGNetWorkTool.h"
+#import "BXGNetworkTool.h"
 
 @protocol BXGNotificationDelegate <NSObject>
 
@@ -18,7 +18,7 @@
 
 @end
 
-@interface BXGNotificationTool : NSObject <BXGNetWorkToolDelegate>
+@interface BXGNotificationTool : NSObject <BXGNetworkToolDelegate>
 
 + (instancetype)share;
 
